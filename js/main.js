@@ -3,7 +3,6 @@ $(document).ready(function() {
 
     $(window).bind('load', function() {
         $("#preloader").fadeOut();
-        $("#preloader").delay(2000).fadeOut("slow");
     });
 
     // Анимация
@@ -30,4 +29,9 @@ $(document).ready(function() {
         });
 
     }
+});
+
+
+$(".form__popup").fancybox({
+    padding: '0'
 });

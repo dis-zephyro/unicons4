@@ -11,6 +11,9 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/slick/slick.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <!--link rel="stylesheet" href="css/main.css"-->
+
         <link rel="stylesheet/less" href="less/main.less">
         <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -44,11 +47,29 @@
                         <div class="phone">8 800 775 81 98</div>
                         <div class="worktime">Круглосуточно без выходных</div>
                     </div>
-
-                    <div class="block01__logo ir">Юникос - Подготовка и консалтинг документов по Пожарной безопасности</div>
-                    <h1><span class="first">Обслуживание пожарных систем <br/>и сигнализаций всех видов!</span></h1>
-                    <div class="text"><span class="line">Экономьте до 30%</span> на обслуживании <span class="lead">уже завтра!</span>
-                        <br/>В Москве и московской области</div>
+                    <div class="center-block">
+                        <div class="center-block-inner">
+                            <div class="block01__logo"></div>
+                            <div class="text-block">
+                                <div class="name">ЮНИСТРОЙ</div>
+                                <h1>Монтаж противопожарных систем<br/><span>консалтинговые услуги в области<br/>пожарной безопасности</span></h1>
+                            </div>
+                            <ul class="center__nav clearfix">
+                                <li class="item1">
+                                    <a href="#">Обучение и аттестация<br/><span>в области пожарной безопасности</span></a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">Консалтинг документов</span></a>
+                                </li>
+                                <li class="item3">
+                                    <a href="#">Получение Лицензий<br>и Аккредитаций</a>
+                                </li>
+                                <li class="item4">
+                                    <a href="#">Строительно-монтажные<br/>работы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <span class="move-down"></span>
                 </div>
@@ -73,19 +94,19 @@
                         <h2>Обучение и аттестация персонала</h2>
                         <ul class="training">
                             <li class="item1">
-                                <a href="#">
+                                <a class="form__popup" href="#consultation">
                                     <div class="top"><span>Узнать подробней</span></div>
                                     <div class="text">Повышение квалификации<br/>персонала в строительных<br/>сферах деятельности<br/>(72 - 140 часов )</div>
                                 </a>
                             </li>
                             <li class="item2">
-                                <a href="#">
+                                <a class="form__popup" href="#consultation">
                                     <div class="top"><span>Узнать подробней</span></div>
                                     <div class="text">Обучение<br/>пожарно-техническому<br/>минимуму для специалистов<br/>и ответсвенных<br/>за пожарную безопаснсть</div>
                                 </a>
                             </li>
                             <li class="item3">
-                                <a href="#">
+                                <a class="form__popup" href="#consultation">
                                     <div class="top"><span>Узнать подробней</span></div>
                                     <div class="text">Обучение и аттестация<br/>экспертов и специалистов,<br/>осуществляющих<br/>деятельность пожарной<br/>безопасности</div>
                                 </a>
@@ -274,6 +295,41 @@
                 </div>
             </section>
             <!-- End of block09--->
+        </div>
+
+        <div class="hidden">
+            <div class="form-inner" id="consultation">
+                <div class="form-header">Форма заявки на расчёт стоимости<br/>обслуживания системы</div>
+                <form enctype="multipart/form-data" method="post" class="cform mini form">
+                    <ol class="cf-ol">
+                        <li>
+                            <label></label>
+                            <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                            <span class="reqtxt">Не указано имя</span>
+                        </li>
+                        <li>
+                            <label></label>
+                            <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/>
+                            <span class="reqtxt">Не указан телефон</span>
+                        </li>
+                        <li>
+                            <label><span></span></label>
+                            <select class="select">
+                                <option>Выберете тип системы</option>
+                                <option>Система 1</option>
+                                <option>Система 2</option>
+                                <option>Система 3</option>
+                                <option>Система 4</option>
+                                <option>Система 5</option>
+                                <option>Система 6</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <p class="cf-sb">
+                        <input type="submit" name="sendbutton8" class="sendbutton btn" value="Оставить заявку" onclick="return cforms_validate('8', false)"/>
+                    </p>
+                </form>
+            </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
