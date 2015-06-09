@@ -140,6 +140,10 @@ body {
 			border: 1px solid #4c4959;
 			background: url("../img/center__nav_bg.png") 0 0 no-repeat;
 
+			&:hover {
+				border-color: #fff;
+			}
+
 			a {
 				color: #fff;
 				width: 100%;
@@ -151,6 +155,7 @@ body {
 				text-align: center;
 				text-decoration: none;
 				font-family: @font-extra;
+				.transition(.5s);
 
 				span {
 					font-size: 12px;
@@ -158,38 +163,42 @@ body {
 			}
 
 			&.item1 a {
-				background: url("../img/block1__icon1.png") 50% 20px no-repeat;
+				background: url("../img/block1__icon1.png") 50% -20px no-repeat;
 
 				&:hover {
 					color: #0a0814;
 					background-color: #e9a13b;
+					background-position: 50% -140px;
 				}
 			}
 
 			&.item2 a {
-				background: url("../img/block1__icon2.png") 50% 16px no-repeat;
+				background: url("../img/block1__icon2.png") 50% -16px no-repeat;
 
 				&:hover {
 					color: #0a0814;
 					background-color: #e9a13b;
+					background-position: 50% -136px;
 				}
 			}
 
 			&.item3 a {
-				background: url("../img/block1__icon3.png") 50% 20px no-repeat;
+				background: url("../img/block1__icon3.png") 50% -20px no-repeat;
 
 				&:hover {
 					color: #0a0814;
 					background-color: #e9a13b;
+					background-position: 50% -140px;
 				}
 			}
 
 			&.item4 a {
-				background: url("../img/block1__icon4.png") 50% 20px no-repeat;
+				background: url("../img/block1__icon4.png") 50% -20px no-repeat;
 
 				&:hover {
 					color: #0a0814;
 					background-color: #e9a13b;
+					background-position: 50% -140px;
 				}
 			}
 		}
